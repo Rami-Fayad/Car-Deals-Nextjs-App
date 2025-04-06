@@ -18,11 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar/>
+      
       <body className="relative">
+      <Navbar/>
         {children}
+        <Footer/>
       </body>
-      <Footer/>
+   
     </html>
   );
 }
