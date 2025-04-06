@@ -2,11 +2,12 @@
 
 import { ButtonProps } from "@/props"
 
-const CustomButton = ({title, containerStyles, handleClick}: ButtonProps) => {
+const CustomButton = ({title, containerStyles, handleClick, btnType}: ButtonProps) => {
   return (
     <button
     disabled={false}
-    type="button"
+    type={btnType}
+
     className={`custom-btn ${containerStyles} `}
     onClick={handleClick}>
      <span className={`flex-1`}>
