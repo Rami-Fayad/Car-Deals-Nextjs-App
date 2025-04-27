@@ -11,6 +11,13 @@ export default function Home() {
           <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
           <p>Explore out cars you might like</p>
         </div>
+        <div className="home_filters">
+           <Searchbar />
+          <div className="home_filters-container">
+            <CustomFilter title="fuel" />
+            <CustomFilter title="year" />
+          </div>
+        </div>
         </div>
       </main>
       
